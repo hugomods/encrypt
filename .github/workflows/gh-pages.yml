@@ -48,7 +48,7 @@ jobs:
       
       - name: Setup Hugo Encrypt
         run: |
-          curl -L -o hugo-encrypt "https://github.com/hugomods/encrypt/releases/download/v0.1.0/hugo-encrypt-linux-64"
+          curl -L -o hugo-encrypt "https://github.com/hugomods/encrypt/releases/download/v0.2.0/hugo-encrypt-linux-64"
           chmod 755 hugo-encrypt
 
       - name: Build with Hugo
