@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {{ partialCached "encrypt/assets/css" . }}
+    {{ partial "encrypt/assets/css" . }}
     <style>
       pre {
         padding: .5rem;
       }
     </style>
-    {{ partialCached "encrypt/assets/js" . }}
+    {{ partial "encrypt/assets/js" . }}
   </head>
   <body>
     {{ .Content }}
