@@ -101,15 +101,13 @@ jobs:
 
       - name: Upload files to Artifacts
         uses: actions/upload-artifact@v3
-        working-directory: ./commands/encrypt
         with:
           name: hugo-encrypt-${{ env.ASSET_NAME }}
           path: |
-            ./hugo-encrypt-${{ env.ASSET_NAME }}*
+            ./commands/encrypt/hugo-encrypt-${{ env.ASSET_NAME }}*
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
-        working-directory: ./commands/encrypt
         if: github.event_name == 'release'
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
