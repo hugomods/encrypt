@@ -4,10 +4,13 @@
     "config:base",
     ":dependencyDashboard"
   ],
+  "ignorePaths": [
+    "exampleSite/**"
+  ],
   "packageRules": [
     {
-      "matchManagers": ["gomod"],
-      "matchDepTypes": ["indirect"],
+      "matchManagers": [ "gomod" ],
+      "matchDepTypes": [ "indirect" ],
       "enabled": true,
       "semanticCommitType": "ci"
     }
