@@ -56,7 +56,7 @@ func encryptPage(path string) {
 	if err != nil {
 		panic(err)
 	}
-	doc.Find("cipher-text").Each(func(i int, block *goquery.Selection) {
+	doc.Find("div.hugo-encrypt-content").Each(func(i int, block *goquery.Selection) {
 		fmt.Printf("Processing %s, %d\n", path, i)
 
 		password, _ := block.Attr("data-password")
@@ -65,7 +65,7 @@ func encryptPage(path string) {
 		sha1ByteArray := sha1.Sum(data)
 		fmt.Printf("SHA1: % x\n\n", sha1ByteArray)
 		sha1String := hex.EncodeToString(sha1ByteArray[:])
-		encryptThis := blockHtml + "\n<div id='hugo-encrypt-sha1sum'>" + sha1String + "</div>"
+		encryptThis := blockHtml + "\n<div class='hugo-encrypt-sha1-sum'>" + sha1String + "</div>"
 		encryptedHtml := encrypt(password, encryptThis)
 		block.RemoveAttr("data-password")
 		block.SetHtml(encryptedHtml)

@@ -1,0 +1,4 @@
+{{- if .HasShortcode "encrypt" }}
+  {{- $css := partialCached "encrypt/assets/css-resource" . }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+{{- end }}

@@ -1,0 +1,11 @@
+[decrypt]
+other = "Decrypt"
+
+[enter_password]
+other = "Please enter the password"
+
+[incorrect_password]
+other = "The password is incorrect."
+
+[protected_by_password]
+other = "The following content is protected."

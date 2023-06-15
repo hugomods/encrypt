@@ -1,0 +1,11 @@
+[decrypt]
+other = "解密"
+
+[enter_password]
+other = "請輸入密碼"
+
+[incorrect_password]
+other = "密碼不正確。"
+
+[protected_by_password]
+other = "以下內容被密碼保護。"
