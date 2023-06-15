@@ -9,9 +9,9 @@ draft: false
 ## Encrypt With Default Password
 
 ```markdown
-{{/*% encrypt %*/}}
+{{%/* encrypt */%}}
 **Hello World!**
-{{/*% /encrypt %*/}}
+{{%/* /encrypt */%}}
 ```
 
 Password: **{{< param "encrypt.password" >}}**.
@@ -23,9 +23,9 @@ Password: **{{< param "encrypt.password" >}}**.
 ## Encrypt With Specified Password
 
 ```markdown
-{{/*% encrypt "foo" %*/}}
+{{%/* encrypt "foo" */%}}
 **BAR**
-{{/*% /encrypt %*/}}
+{{%/* /encrypt */%}}
 ```
 
 Password: **foo**.
