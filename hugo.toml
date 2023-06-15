@@ -7,3 +7,7 @@ path = "github.com/hugomods/icons/vendors/bootstrap"
 [params.encrypt]
 password = ""
 storage = "session"
+
+[params.hugopress.modules.encrypt.hooks.head-end]
+
+[params.hugopress.modules.encrypt.hooks.body-end]
