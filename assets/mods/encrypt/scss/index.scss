@@ -4,6 +4,10 @@
     display: none;
 }
 
+.hugo-encrypt-info {
+    display: flex;
+}
+
 .hugo-encrypt {
     &.decrypted {
         .hugo-encrypt-content {
@@ -19,10 +23,6 @@
 
 .hugo-encrypt-sha1-sum {
     display: none;
-}
-
-.hugo-encrypt-info {
-    display: flex;
 }
 
 .hugo-encrypt-icon {

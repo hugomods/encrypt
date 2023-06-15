@@ -1,5 +1,5 @@
-import snackbar from 'mods/snackbar/js/index.ts';
-import params from '@params';
+import snackbar from 'mods/snackbar/js/index.ts'
+import params from '@params'
 
 class Decryptor {
   /**
@@ -45,7 +45,7 @@ class Decryptor {
     salt = salt ?? crypto.getRandomValues(new Uint8Array(8))
     return await crypto.subtle
       .importKey('raw', this.str2buf(passphrase), 'PBKDF2', false, [
-        'deriveKey',
+        'deriveKey'
       ])
       .then(
         async (key) =>
@@ -105,7 +105,6 @@ class Decryptor {
   }
 
   private cacheKey (id: string): string {
-    console.log(location.pathname, window.location.pathname)
     return `hugo-encrypt-password-${location.pathname}-${id}`
   }
 
