@@ -4,21 +4,7 @@ on:
   workflow_dispatch:
   release:
     types: [published]
-  push:
-    branches:
-      - master
-    paths:
-      - "**/*.go"
-      - "go.mod"
-      - "go.sum"
-      - ".github/workflows/*.yml"
-  pull_request:
-    types: [opened, synchronize, reopened]
-    paths:
-      - "**/*.go"
-      - "go.mod"
-      - "go.sum"
-      - ".github/workflows/*.yml"
+
 jobs:
   build:
     permissions:
@@ -89,29 +75,33 @@ jobs:
           echo "ASSET_NAME=$_NAME" >> $GITHUB_ENV
 
       - name: Set up Go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v4
         with:
-          go-version: 1.19
           check-latest: true
 
       - name: Get project dependencies
         run: go mod download
+        working-directory: ./commands/encrypt
       
       - name: Build hugo encrypt
         run: |
           go build -v -o hugo-encrypt -trimpath -ldflags "-s -w -buildid=" .
+        working-directory: ./commands/encrypt
 
       - name: Rename Windows hugo encrypt
         if: matrix.goos == 'windows'
+        working-directory: ./commands/encrypt
         run: |
           mv hugo-encrypt hugo-encrypt.exe
 
       - name: Change the name
+        working-directory: ./commands/encrypt
         run: |
           mv hugo-encrypt hugo-encrypt-${{ env.ASSET_NAME }} || mv hugo-encrypt.exe hugo-encrypt-${{ env.ASSET_NAME }}.exe
 
       - name: Upload files to Artifacts
         uses: actions/upload-artifact@v3
+        working-directory: ./commands/encrypt
         with:
           name: hugo-encrypt-${{ env.ASSET_NAME }}
           path: |
@@ -119,9 +109,10 @@ jobs:
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
+        working-directory: ./commands/encrypt
         if: github.event_name == 'release'
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./hugo-encrypt-${{ env.ASSET_NAME }}*
+          file: ./commands/encrypt/hugo-encrypt-${{ env.ASSET_NAME }}*
           tag: ${{ github.ref }}
           file_glob: true

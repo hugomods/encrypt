@@ -1,0 +1,9 @@
+{{- $opts := dict
+  "targetPath" "css/encrypt.css"
+}}
+{{- if hugo.IsProduction }}
+  {{- $opts = $opts | merge (dict "outputStyle " "compressed") }}
+{{- end }}
+{{- $css := resources.Get "mods/encrypt/scss/index.scss" }}
+{{- $css = $css | toCSS $opts }}
+{{- return $css }}

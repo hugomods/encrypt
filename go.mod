@@ -1,8 +1,8 @@
-module hugo-encrypt
+module github.com/hugomods/encrypt
 
-go 1.12
+go 1.19
 
 require (
-	github.com/PuerkitoBio/goquery v1.8.1
-	golang.org/x/crypto v0.8.0
+	github.com/hugomods/icons/vendors/bootstrap v0.5.0 // indirect
+	github.com/hugomods/snackbar v0.1.2 // indirect
 )

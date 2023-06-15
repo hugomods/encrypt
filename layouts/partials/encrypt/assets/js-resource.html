@@ -1,0 +1,11 @@
+{{- $params := dict
+  "storage" site.Params.encrypt.storage
+}}
+{{- $opts := dict
+  "targetPath" "js/encrypt.js"
+  "minify" hugo.IsProduction
+  "params" $params
+}}
+{{- $js := resources.Get "mods/encrypt/js/index.ts" }}
+{{- $js = $js | js.Build $opts }}
+{{- return $js }}

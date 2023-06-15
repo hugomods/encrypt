@@ -1,0 +1,22 @@
+{{- $password := default site.Params.encrypt.Password (.Get 0) }}
+{{- if not $password }}
+  {{- errorf "[encrypt] no password specified." }}
+{{- end }}
+<div class="hugo-encrypt" data-error-msg="{{ i18n `incorrect_password` }}" data-id="{{ .Inner | md5 }}">
+  <p class="hugo-encrypt-info">
+    {{ partial "icons/icon" (dict "vendor" "bs" "name" "file-earmark-lock" "className" "hugo-encrypt-icon") }}
+    {{ i18n "protected_by_password" }}
+  </p>
+  <div class="hugo-decrypt-form">
+    <input
+      name="hugo-encrypt-password"
+      type="password"
+      placeholder="{{ i18n `enter_password` }}" />
+    <button class="hugo-decrypt-button">
+      {{- i18n "decrypt" -}}
+    </button>
+  </div>
+  <div class="hugo-encrypt-content" data-password="{{ $password }}">
+    {{ .Inner }}
+  </div>
+</div>

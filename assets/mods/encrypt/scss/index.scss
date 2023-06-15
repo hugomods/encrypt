@@ -1,0 +1,30 @@
+@import "../../snackbar/scss/index";
+
+.hugo-encrypt-content {
+    display: none;
+}
+
+.hugo-encrypt-info {
+    display: flex;
+}
+
+.hugo-encrypt {
+    &.decrypted {
+        .hugo-encrypt-content {
+            display: block;
+        }
+
+        .hugo-encrypt-info,
+        .hugo-decrypt-form {
+            display: none;
+        }
+    }
+}
+
+.hugo-encrypt-sha1-sum {
+    display: none;
+}
+
+.hugo-encrypt-icon {
+    margin-right: 0.25rem;
+}
