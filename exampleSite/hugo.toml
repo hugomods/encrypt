@@ -4,7 +4,7 @@ baseURL = "https://example.com"
 path = "github.com/hugomods/encrypt"
 
 [params.encrypt]
-password = "https://hugomods.com"
+password = "hugomods.com"
 storage = "session"
 
 [markup]
