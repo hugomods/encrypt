@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.1
-	golang.org/x/crypto v0.11.0
+	golang.org/x/crypto v0.12.0
 )
 
 require (
