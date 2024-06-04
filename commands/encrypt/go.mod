@@ -4,10 +4,10 @@ go 1.19
 
 require (
 	github.com/PuerkitoBio/goquery v1.9.2
-	golang.org/x/crypto v0.23.0
+	golang.org/x/crypto v0.24.0
 )
 
 require (
 	github.com/andybalholm/cascadia v1.3.2 // indirect
-	golang.org/x/net v0.25.0 // indirect
+	golang.org/x/net v0.26.0 // indirect
 )
