@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/hugomods/encrypt/compare/v0.3.0...v0.3.1) (2024-06-30)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.7 ([cadfb3e](https://github.com/hugomods/encrypt/commit/cadfb3ef8a7a7f09e4a52b89fa4619a389741c82))
+* **deps:** update module golang.org/x/net to v0.26.0 ([04c24ef](https://github.com/hugomods/encrypt/commit/04c24eff2a90da3a7506543047dc6229ede304f9))
+
 ## [0.3.0](https://github.com/hugomods/encrypt/compare/v0.2.0...v0.3.0) (2024-05-28)
 
 
