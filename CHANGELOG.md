@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.4.0](https://github.com/hugomods/encrypt/compare/v0.3.0...v0.4.0) (2024-08-22)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.7 ([cadfb3e](https://github.com/hugomods/encrypt/commit/cadfb3ef8a7a7f09e4a52b89fa4619a389741c82))
+* **deps:** update module golang.org/x/net to v0.26.0 ([04c24ef](https://github.com/hugomods/encrypt/commit/04c24eff2a90da3a7506543047dc6229ede304f9))
+* **deps:** update module golang.org/x/net to v0.27.0 ([6a472cc](https://github.com/hugomods/encrypt/commit/6a472cc0d76d86e8cd26afa7461e91288acac278))
+* **deps:** update module golang.org/x/net to v0.28.0 ([599fcb5](https://github.com/hugomods/encrypt/commit/599fcb5b7da57e4ce58af2f09ee9964f000bd25e))
+
+
+### Features ✨
+
+* add the encrypt.sass_transpiler parameter, default to dartsass ([5f52ce6](https://github.com/hugomods/encrypt/commit/5f52ce63ec54df183fcbedb52d840dc4b249021d))
+
+
+### Bug Fixes 🐞
+
+* **deps:** update module golang.org/x/crypto to v0.25.0 ([53c23fc](https://github.com/hugomods/encrypt/commit/53c23fc64c6d1a5569fe2faa9b4c821115510def))
+
 ## [0.3.0](https://github.com/hugomods/encrypt/compare/v0.2.0...v0.3.0) (2024-05-28)
 
 
