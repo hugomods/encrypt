@@ -1,5 +1,6 @@
 {{- $opts := dict
   "targetPath" "css/encrypt.css"
+  "transpiler" (default "dartsass" site.Params.encrypt.sass_transpiler)
 }}
 {{- if hugo.IsProduction }}
   {{- $opts = $opts | merge (dict "outputStyle " "compressed") }}
