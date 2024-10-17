@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.1](https://github.com/hugomods/encrypt/compare/v0.4.0...v0.4.1) (2024-10-17)
+
+
+### Continuous Integration
+
+* **deps:** update module golang.org/x/net to v0.29.0 ([828e578](https://github.com/hugomods/encrypt/commit/828e578b56ab182d7a6c9aa44cb1706fd7cb8e04))
+* **deps:** update module golang.org/x/net to v0.30.0 ([7cda1eb](https://github.com/hugomods/encrypt/commit/7cda1eb96185f439d25ba1d14e91fd924bf5d8e2))
+
+
+### Bug Fixes 🐞
+
+* **deps:** update module github.com/puerkitobio/goquery to v1.10.0 ([4e3ef44](https://github.com/hugomods/encrypt/commit/4e3ef4443c8b6237d2cdee0f459f17ec84fbc371))
+
 ## [0.4.0](https://github.com/hugomods/encrypt/compare/v0.3.0...v0.4.0) (2024-08-22)
 
 
