@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.4.1](https://github.com/hugomods/encrypt/compare/v0.4.0...v0.4.1) (2024-12-04)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.8 ([aac3bd3](https://github.com/hugomods/encrypt/commit/aac3bd357c83aa765dce863d38e6222ede8570ed))
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.9 ([cc0eae9](https://github.com/hugomods/encrypt/commit/cc0eae9e31209a68eec00f088a43797790fa6c3d))
+* **deps:** update module golang.org/x/net to v0.29.0 ([828e578](https://github.com/hugomods/encrypt/commit/828e578b56ab182d7a6c9aa44cb1706fd7cb8e04))
+* **deps:** update module golang.org/x/net to v0.30.0 ([7cda1eb](https://github.com/hugomods/encrypt/commit/7cda1eb96185f439d25ba1d14e91fd924bf5d8e2))
+* **deps:** update module golang.org/x/net to v0.31.0 ([08f0e47](https://github.com/hugomods/encrypt/commit/08f0e475a275e19ad33255dabf08c0b83a4d2685))
+* **deps:** update module golang.org/x/net to v0.32.0 ([62b1a67](https://github.com/hugomods/encrypt/commit/62b1a675794d4c009bc2731e5512d603a19d3c72))
+
+
+### Bug Fixes 🐞
+
+* **deps:** update module github.com/puerkitobio/goquery to v1.10.0 ([4e3ef44](https://github.com/hugomods/encrypt/commit/4e3ef4443c8b6237d2cdee0f459f17ec84fbc371))
+* **deps:** update module golang.org/x/crypto to v0.29.0 ([2336b34](https://github.com/hugomods/encrypt/commit/2336b3454558ad5d24d9e6997b56d42638c6d640))
+
 ## [0.4.0](https://github.com/hugomods/encrypt/compare/v0.3.0...v0.4.0) (2024-08-22)
 
 
