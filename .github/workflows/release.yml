@@ -100,7 +100,7 @@ jobs:
           mv hugo-encrypt hugo-encrypt-${{ env.ASSET_NAME }} || mv hugo-encrypt.exe hugo-encrypt-${{ env.ASSET_NAME }}.exe
 
       - name: Upload files to Artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: hugo-encrypt-${{ env.ASSET_NAME }}
           path: |
