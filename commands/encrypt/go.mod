@@ -6,7 +6,7 @@ toolchain go1.26.3
 
 require (
 	github.com/PuerkitoBio/goquery v1.12.0
-	golang.org/x/crypto v0.50.0
+	golang.org/x/crypto v0.51.0
 )
 
 require (
