@@ -2,7 +2,7 @@ module github.com/hugomods/encrypt/commands/encrypt
 
 go 1.25.0
 
-toolchain go1.26.6
+toolchain go1.27.0
 
 require (
 	github.com/PuerkitoBio/goquery v1.12.0
